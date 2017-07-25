@@ -4,8 +4,22 @@
         //$('.welcome-message').text(message);
     //});
 	
-	var foodieApp = angular.module('foodieApp',[]);
+	var foodieApp = angular.module('foodieApp',['ngRoute']);
 	console.log(foodieApp);
+	
+	
+	foodieApp.config(function ($routeProvider) {
+	$routeProvider
+	.when('/',{
+		templateUrl: 'pages/login.html',
+		controller: 'loginController'
+	})
+	.when('/home',{
+		templateUrl: 'pages/main.html',
+		controller: 'mainController'
+	})
+})
+	
 	
 	foodieApp.controller('mainController',function($scope) {
 	//$scope.restaurants = ['Farzi Cafe','Pizza Hut','Wenger\'s Deli','Sagar Ratna'];
@@ -103,3 +117,7 @@
 	
  })
 
+ 
+ 
+foodieApp.controller('loginController',function($scope) {
+})

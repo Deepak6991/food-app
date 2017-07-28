@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='foodieApp'>
+<html lang="en" ng-app='foodieApp'>  <!-----app ko name asign kar rhe h using ng-app-----> 
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 	<script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
 
 	<style>
-    input.ng-invalid.ng-dirty {
+    input.ng-invalid.ng-dirty {               <!-----ng-dirty is the directive that tells us that the user has typed something in the form----->
             border: 1px solid red;
         }
 </style>
@@ -21,7 +21,10 @@
 
 <body id="app">
 
-    <div ng-view></div>
+    <div ng-view></div>   <!------- ng-view' is a directive that we use to tell angular where we 
+	                             want to show our view 
+								 whenever the url(route) is changed, Angular only updates the content inside this 'ng-view' div
+						  --->
 
 
     <script src="js/jquery.js"></script>

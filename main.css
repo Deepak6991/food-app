@@ -21,7 +21,47 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.about-main{
+	margin-left:120px;
+	margin-right:120px;
+	background-image:url('http://media.gettyimages.com/photos/indian-food-served-in-plate-on-table-picture-id590365605?s=170667a');
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	min-height: 300px;
+	color:white;
+	font-size: 36px;
+	display: flex;
+	background-size:cover;
+}
+.diabetes-message{
+	margin-right: 40px;
+	position:relative;
+	left:-100px;
+	background-color: white;
+	float:right;
+	width:400px;
+	margin-top:-40%;
+	text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:10px;
+	padding-right:10px;
+	color:green;
+}
+.we-provide{
+	margin-left:120px;
+	margin-right:120px;
+	color:rgb(51,55,58);
+	text-align: center;
+}
+ul{
+	list-style:none;
+}
+li{
+	font-size:15px;
+	color:rgb(123,125,129,);
+}
 #app .navbar {
     color: white;
     background-color: #cb202d;
@@ -73,6 +113,17 @@ body {
     padding: 2rem;
     border-radius: 4px;
 }
+.restaurant-page {
+    background-color: white;
+    position: relative;
+    width: 600px;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
 
 .rest-wrapper {
     display: flex;
@@ -118,6 +169,17 @@ body {
 }
 
 .restaurant .rating {
+    color: white;
+    background-color: #5BA829;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+.rating2{
     color: white;
     background-color: #5BA829;
     position: absolute;
